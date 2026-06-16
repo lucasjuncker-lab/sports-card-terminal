@@ -13,10 +13,26 @@ body{
     font-family:Arial,sans-serif;
     padding:20px;
     margin:0;
+#watchlistPanel{
+    background:#1e293b;
+    padding:15px;
+    border-radius:12px;
+    margin-bottom:20px;
+    min-height:50px;
 }
 
+.watch-item{
+    background:#334155;
+    padding:8px 12px;
+    border-radius:8px;
+    margin:5px;
+    display:inline-block;
+}}
+
 h1{
-    margin-bottom:20px;
+<h2>⭐ Your Watchlist</h2>
+
+<div id="watchlistPanel"></div>    margin-bottom:20px;
 }
 
 .grid{
@@ -215,8 +231,11 @@ let watchlist =
 JSON.parse(
 localStorage.getItem("watchlist")
 ) || [];
-
-function toggleWatchlist(productName){
+window.addEventListener(
+    "load",
+    renderWatchlist
+);
+function toggleWatchlist(renderWatchlist();){
 
     if(
         watchlist.includes(productName)
@@ -242,6 +261,32 @@ function toggleWatchlist(productName){
         productName +
         " watchlist updated"
     );
+
+}
+    function renderWatchlist(){
+
+    const panel =
+    document.getElementById("watchlistPanel");
+
+    if(watchlist.length === 0){
+
+        panel.innerHTML =
+        "No items watched yet.";
+
+        return;
+    }
+
+    panel.innerHTML = "";
+
+    watchlist.forEach(item => {
+
+        panel.innerHTML += `
+            <div class="watch-item">
+                ⭐ ${item}
+            </div>
+        `;
+
+    });
 
 }
 fetch("products.json")
