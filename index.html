@@ -7,90 +7,80 @@
 <title>Sports Card Market Terminal</title>
 
 <style>
-body{
-background:#0f172a;
-color:white;
-font-family:Arial,sans-serif;
-padding:20px;
-margin:0;
-}
-
-h1{
-margin-bottom:20px;
-}
-
-.grid{
-display:grid;
-grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
-gap:15px;
-}
-
-.card{
-background:#1e293b;
-padding:15px;
-border-radius:12px;
-border:1px solid #334155;
-}
-
-.card img{
-width:100%;
-height:180px;
-object-fit:cover;
-border-radius:8px;
-}
-
-.name{
-font-size:18px;
-font-weight:bold;
-margin-top:10px;
-}
-
-.price{
-font-size:26px;
-font-weight:bold;
-color:#22c55e;
-margin-top:10px;
-}
-
-.store{
-color:#94a3b8;
-margin-top:5px;
-}
-
-.trend{
-margin-top:10px;
-font-weight:bold;
-}
-
-.up{
-color:#22c55e;
-}
-
-.down{
-color:#ef4444;
-}
-
-#products{
-margin-top:20px;
-}
-</style>
-
-</head>
-<body>
+body{<body>
 
 <h1>🏈 Sports Card Market Terminal</h1>
+
+<div style="display:flex;gap:10px;flex-wrap:wrap;margin-bottom:20px;">
+
+<input
+id="searchBox"
+type="text"
+placeholder="Search products..."
+style="
+padding:10px;
+border:none;
+border-radius:8px;
+width:250px;
+font-size:16px;
+.filter-btn{
+background:#1e293b;
+color:white;
+border:none;
+padding:10px 15px;
+border-radius:8px;
+cursor:pointer;
+font-weight:bold;
+}
+
+.filter-btn:hover{
+background:#334155;
+}
+">
+
+<button class="filter-btn" data-sport="All">All</button>
+<button class="filter-btn" data-sport="Football">Football</button>
+<button class="filter-btn" data-sport="Baseball">Baseball</button>
+<button class="filter-btn" data-sport="Basketball">Basketball</button>
+
+</div>
 
 <div id="products" class="grid"></div>
 
 <script>
 
-fetch('products.json')
-.then(response => response.json())
-.then(products => {
+let allProducts = [];
+let currentSport = "All";
+
+function renderProducts(){
 
 const container = document.getElementById('products');
 
-products.forEach(product => {
+const searchText =
+document.getElementById('searchBox')
+.value
+.toLowerCase();
+
+container.innerHTML = '';
+
+const filteredProducts =
+allProducts.filter(product => {
+
+const matchesSearch =
+product.name
+.toLowerCase()
+.includes(searchText);
+
+const matchesSport =
+currentSport === 'All'
+||
+product.sport === currentSport;
+
+return matchesSearch && matchesSport;
+
+});
+
+filteredProducts.forEach(product => {
 
 const trendClass =
 product.trend.includes('-')
@@ -123,9 +113,45 @@ ${product.trend}
 
 });
 
+}
+
+fetch('products.json')
+.then(response => response.json())
+.then(products => {
+
+allProducts = products;
+
+renderProducts();
+
+});
+
+document.addEventListener('input', e => {
+
+if(e.target.id === 'searchBox'){
+
+renderProducts();
+
+}
+
+});
+
+document.querySelectorAll('.filter-btn')
+.forEach(button => {
+
+button.addEventListener('click', () => {
+
+currentSport =
+button.dataset.sport;
+
+renderProducts();
+
+});
+
 });
 
 </script>
+
+</body>
 
 </body>
 </html>
