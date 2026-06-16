@@ -1,1 +1,26 @@
-
+[
+  {
+    "name":"Topps Chrome Football Mega",
+    "sport":"Football",
+    "price":"54.99",
+    "store":"Walmart",
+    "trend":"+8.4%",
+    "image":"https://picsum.photos/400/250?1"
+  },
+  {
+    "name":"Prizm Football Mega",
+    "sport":"Football",
+    "price":"59.99",
+    "store":"Target",
+    "trend":"-2.1%",
+    "image":"https://picsum.photos/400/250?2"
+  },
+  {
+    "name":"Bowman Chrome Hobby",
+    "sport":"Baseball",
+    "price":"239.99",
+    "store":"Dave & Adam's",
+    "trend":"+12.7%",
+    "image":"https://picsum.photos/400/250?3"
+  }
+]
