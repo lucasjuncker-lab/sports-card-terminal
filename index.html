@@ -99,7 +99,21 @@ h1{
     background:#334155;
 }
 </style>
+.watch-btn{
+    margin-top:12px;
+    width:100%;
+    background:#f59e0b;
+    border:none;
+    color:white;
+    padding:10px;
+    border-radius:8px;
+    cursor:pointer;
+    font-weight:bold;
+}
 
+.watch-btn:hover{
+    opacity:.9;
+}
 </head>
 
 <body>
@@ -181,16 +195,55 @@ function renderProducts(){
                     Best Store: ${product.store}
                 </div>
 
-                <div class="trend ${trendClass}">
-                    ${product.trend}
-                </div>
+               <div class="trend ${trendClass}">
+    ${product.trend}
+</div>
+
+<button
+class="watch-btn"
+onclick="toggleWatchlist('${product.name}')"
+>
+⭐ Watch
+</button>
 
             </div>
         `;
     });
 
 }
+let watchlist =
+JSON.parse(
+localStorage.getItem("watchlist")
+) || [];
 
+function toggleWatchlist(productName){
+
+    if(
+        watchlist.includes(productName)
+    ){
+
+        watchlist =
+        watchlist.filter(
+            item => item !== productName
+        );
+
+    }else{
+
+        watchlist.push(productName);
+
+    }
+
+    localStorage.setItem(
+        "watchlist",
+        JSON.stringify(watchlist)
+    );
+
+    alert(
+        productName +
+        " watchlist updated"
+    );
+
+}
 fetch("products.json")
     .then(response => response.json())
     .then(products => {
