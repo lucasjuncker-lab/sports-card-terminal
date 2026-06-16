@@ -22,5 +22,13 @@
     "store":"Dave & Adam's",
     "trend":"+12.7%",
     "image":"https://picsum.photos/400/250?3"
+    {
+  "name":"Prizm Basketball Hobby",
+  "sport":"Basketball",
+  "price":"399.99",
+  "store":"Steel City",
+  "trend":"+5.2%",
+  "image":"https://picsum.photos/400/250?4"
+}
   }
 ]
