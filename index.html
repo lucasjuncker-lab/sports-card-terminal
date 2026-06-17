@@ -375,6 +375,49 @@ function renderBestDeals(){
     });
 
 }
+    function renderHotProducts(){
+
+    const board =
+    document.getElementById(
+        "hotProductsList"
+    );
+
+    if(!board) return;
+
+    const ranked =
+    [...allProducts]
+    .sort(
+        (a,b)=>
+        parseFloat(
+            b.trend.replace("%","")
+        )
+        -
+        parseFloat(
+            a.trend.replace("%","")
+        )
+    )
+    .slice(0,5);
+
+    board.innerHTML = "";
+
+    ranked.forEach(product => {
+
+        board.innerHTML += `
+        <div style="
+        padding:10px;
+        margin-bottom:8px;
+        background:#334155;
+        border-radius:8px;
+        ">
+            🔥 <strong>${product.name}</strong>
+            <br>
+            Trend: ${product.trend}
+        </div>
+        `;
+
+    });
+
+}
 fetch("products.json")
 .then(response => response.json())
 .then(products => {
