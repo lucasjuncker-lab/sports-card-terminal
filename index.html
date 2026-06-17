@@ -321,7 +321,55 @@ function renderProducts(){
     });
 
 }
+function renderBestDeals(){
 
+    const board =
+    document.getElementById(
+        "bestDealsList"
+    );
+
+    if(!board) return;
+
+    const ranked =
+    [...allProducts]
+    .sort(
+        (a,b)=>
+        getMarketScore(b)
+        -
+        getMarketScore(a)
+    )
+    .slice(0,5);
+
+    board.innerHTML = "";
+
+    ranked.forEach((product,index)=>{
+
+        const medals =
+        ["🥇","🥈","🥉","4️⃣","5️⃣"];
+
+        board.innerHTML += `
+        <div style="
+        padding:10px;
+        margin-bottom:8px;
+        background:#334155;
+        border-radius:8px;
+        ">
+            <strong>
+            ${medals[index]}
+            ${product.name}
+            </strong>
+            <br>
+            Score:
+            ${getMarketScore(product)}
+            <br>
+            Price:
+            $${product.price}
+        </div>
+        `;
+
+    });
+
+}
 fetch("products.json")
 .then(response => response.json())
 .then(products => {
