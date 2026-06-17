@@ -177,6 +177,25 @@ border:1px solid #334155;
 <script>
 
 let allProducts = [];
+    function getMarketScore(product){
+
+    const trend =
+    parseFloat(
+        product.trend.replace("%","")
+    );
+
+    const price =
+    parseFloat(product.price);
+
+    const valueScore =
+    Math.max(0,100-(price/5));
+
+    return Math.round(
+        (trend*6) +
+        valueScore
+    );
+
+}
 let currentSport = "All";
 
 let watchlist =
