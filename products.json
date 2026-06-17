@@ -102,7 +102,7 @@
     "price": "64.99",
     "store": "Walmart",
     "trend": "+8.1%",
-    "image":"images/optic-basketball-mega.jpg"
+    "image":"images/optic-basketball-blaster.jpg"
   },
   {
     "name": "Optic Football Blaster",
@@ -110,7 +110,7 @@
     "price": "34.99",
     "store": "Target",
     "trend": "+4.4%",
-    "image": "https://picsum.photos/400/250?15"
+    "image":"images/optic-basketball-mega.jpg"
   }
   {
   "name": "Optic Football Hobby Box",
