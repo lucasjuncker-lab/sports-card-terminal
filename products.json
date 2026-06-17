@@ -95,16 +95,9 @@
     "trend": "+5.2%",
     "image":"images/prizm-basketball-hobby.jpg"
   },
+
   {
-    "name": "Prizm Basketball Mega",
-    "sport": "Basketball",
-    "price": "69.99",
-    "store": "Target",
-    "trend": "+6.8%",
-    "image": "https://picsum.photos/400/250?13"
-  },
-  {
-    "name": "Optic Basketball Mega",
+    "name": "Optic Football Mega",
     "sport": "Basketball",
     "price": "64.99",
     "store": "Walmart",
@@ -112,7 +105,7 @@
     "image": "https://picsum.photos/400/250?14"
   },
   {
-    "name": "Optic Basketball Blaster",
+    "name": "Optic Football Blaster",
     "sport": "Basketball",
     "price": "34.99",
     "store": "Target",
