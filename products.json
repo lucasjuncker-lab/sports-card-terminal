@@ -13,7 +13,7 @@
     "price": "29.99",
     "store": "Target",
     "trend": "+6.2%",
-    "image":"images/topps-chrome-baseball-blaster.jpg"
+    "image":"images/topps-chrome-football-blaster.jpg"
   },
   {
     "name": "Prizm Football Mega",
@@ -77,7 +77,7 @@
     "price": "29.99",
     "store": "Target",
     "trend": "+3.1%",
-    "image": "https://picsum.photos/400/250?10"
+    "image":"images/topps-chrome-baseball-blaster.jpg"
   },
   {
     "name": "Prizm Baseball Hobby",
