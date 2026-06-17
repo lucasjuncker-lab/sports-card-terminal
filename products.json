@@ -8,12 +8,44 @@
     "image": "https://picsum.photos/400/250?1"
   },
   {
+    "name": "Topps Chrome Football Blaster",
+    "sport": "Football",
+    "price": "29.99",
+    "store": "Target",
+    "trend": "+6.2%",
+    "image": "https://picsum.photos/400/250?2"
+  },
+  {
     "name": "Prizm Football Mega",
     "sport": "Football",
     "price": "59.99",
     "store": "Target",
     "trend": "-2.1%",
-    "image": "https://picsum.photos/400/250?2"
+    "image": "https://picsum.photos/400/250?3"
+  },
+  {
+    "name": "Prizm Football Blaster",
+    "sport": "Football",
+    "price": "34.99",
+    "store": "Walmart",
+    "trend": "+3.4%",
+    "image": "https://picsum.photos/400/250?4"
+  },
+  {
+    "name": "Donruss Football Mega",
+    "sport": "Football",
+    "price": "54.99",
+    "store": "Meijer",
+    "trend": "+4.8%",
+    "image": "https://picsum.photos/400/250?5"
+  },
+  {
+    "name": "Donruss Football Blaster",
+    "sport": "Football",
+    "price": "27.99",
+    "store": "Target",
+    "trend": "+2.2%",
+    "image": "https://picsum.photos/400/250?6"
   },
   {
     "name": "Bowman Chrome Hobby",
@@ -21,7 +53,39 @@
     "price": "239.99",
     "store": "Dave & Adam's",
     "trend": "+12.7%",
-    "image": "https://picsum.photos/400/250?3"
+    "image": "https://picsum.photos/400/250?7"
+  },
+  {
+    "name": "Bowman Mega Box",
+    "sport": "Baseball",
+    "price": "49.99",
+    "store": "Target",
+    "trend": "+7.3%",
+    "image": "https://picsum.photos/400/250?8"
+  },
+  {
+    "name": "Topps Chrome Baseball Mega",
+    "sport": "Baseball",
+    "price": "54.99",
+    "store": "Walmart",
+    "trend": "+5.6%",
+    "image": "https://picsum.photos/400/250?9"
+  },
+  {
+    "name": "Topps Chrome Baseball Blaster",
+    "sport": "Baseball",
+    "price": "29.99",
+    "store": "Target",
+    "trend": "+3.1%",
+    "image": "https://picsum.photos/400/250?10"
+  },
+  {
+    "name": "Prizm Baseball Hobby",
+    "sport": "Baseball",
+    "price": "149.99",
+    "store": "Steel City",
+    "trend": "+4.2%",
+    "image": "https://picsum.photos/400/250?11"
   },
   {
     "name": "Prizm Basketball Hobby",
@@ -29,6 +93,30 @@
     "price": "399.99",
     "store": "Steel City",
     "trend": "+5.2%",
-    "image": "https://picsum.photos/400/250?4"
+    "image": "https://picsum.photos/400/250?12"
+  },
+  {
+    "name": "Prizm Basketball Mega",
+    "sport": "Basketball",
+    "price": "69.99",
+    "store": "Target",
+    "trend": "+6.8%",
+    "image": "https://picsum.photos/400/250?13"
+  },
+  {
+    "name": "Optic Basketball Mega",
+    "sport": "Basketball",
+    "price": "64.99",
+    "store": "Walmart",
+    "trend": "+8.1%",
+    "image": "https://picsum.photos/400/250?14"
+  },
+  {
+    "name": "Optic Basketball Blaster",
+    "sport": "Basketball",
+    "price": "34.99",
+    "store": "Target",
+    "trend": "+4.4%",
+    "image": "https://picsum.photos/400/250?15"
   }
 ]
