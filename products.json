@@ -113,12 +113,13 @@
     "image":"images/optic-basketball-mega.jpg"
   },
   
-  {
+{
   "name": "Optic Football Hobby Box",
   "sport": "Football",
   "price": "449.99",
+  "previousPrice": "429.99",
   "store": "Steel City",
   "trend": "+9.5%",
-  "image":"images/optic-football-hobby.jpg"
+  "image": "images/optic-football-hobby.jpg"
 }
 ]
