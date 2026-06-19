@@ -1,45 +1,74 @@
-[
-  {
-    "name": "Optic Football Hobby",
-    "sport": "Football",
-    "stores": [
-      {
-        "store": "Dave & Adam's",
-        "url": "",
-        "lastPrice": null
-      },
-      {
-        "store": "Steel City Collectibles",
-        "url": "",
-        "lastPrice": null
-      },
-      {
-        "store": "Blowout Cards",
-        "url": "",
-        "lastPrice": null
-      }
-    ]
-  },
-
-  {
-    "name": "Optic Football Mega",
-    "sport": "Football",
-    "stores": [
-      {
-        "store": "Walmart",
-        "url": "",
-        "lastPrice": null
-      },
-      {
-        "store": "Target",
-        "url": "",
-        "lastPrice": null
-      },
-      {
-        "store": "Fanatics",
-        "url": "",
-        "lastPrice": null
-      }
-    ]
-  }
-]
+{
+  "products": [
+    {
+      "name": "Optic Football Hobby",
+      "sport": "Football",
+      "stores": []
+    },
+    {
+      "name": "Optic Football Mega",
+      "sport": "Football",
+      "stores": []
+    },
+    {
+      "name": "Optic Football Blaster",
+      "sport": "Football",
+      "stores": []
+    },
+    {
+      "name": "Topps Chrome Football Hobby",
+      "sport": "Football",
+      "stores": []
+    },
+    {
+      "name": "Topps Chrome Football Mega",
+      "sport": "Football",
+      "stores": []
+    },
+    {
+      "name": "Topps Chrome Football Value Box",
+      "sport": "Football",
+      "stores": []
+    },
+    {
+      "name": "Topps Signature Football",
+      "sport": "Football",
+      "stores": []
+    },
+    {
+      "name": "Phoenix Football Mega",
+      "sport": "Football",
+      "stores": []
+    },
+    {
+      "name": "Phoenix Football Blaster",
+      "sport": "Football",
+      "stores": []
+    },
+    {
+      "name": "Prizm Black Football Hobby",
+      "sport": "Football",
+      "stores": []
+    },
+    {
+      "name": "Bowman Chrome Baseball Hobby",
+      "sport": "Baseball",
+      "stores": []
+    },
+    {
+      "name": "Topps Chrome Baseball Mega",
+      "sport": "Baseball",
+      "stores": []
+    },
+    {
+      "name": "Topps Chrome Baseball Blaster",
+      "sport": "Baseball",
+      "stores": []
+    },
+    {
+      "name": "Bowman Chrome Basketball",
+      "sport": "Basketball",
+      "stores": []
+    }
+  ]
+}
