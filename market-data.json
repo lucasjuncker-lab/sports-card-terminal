@@ -1,0 +1,45 @@
+{
+  "products": [
+    {
+      "name": "Optic Football Hobby",
+
+      "currentPrice": null,
+      "previousPrice": null,
+
+      "lowestPrice": null,
+      "lowestStore": null,
+
+      "trend": null,
+
+      "lastUpdated": null
+    },
+
+    {
+      "name": "Optic Football Mega",
+
+      "currentPrice": null,
+      "previousPrice": null,
+
+      "lowestPrice": null,
+      "lowestStore": null,
+
+      "trend": null,
+
+      "lastUpdated": null
+    },
+
+    {
+      "name": "Topps Chrome Football Hobby",
+
+      "currentPrice": null,
+      "previousPrice": null,
+
+      "lowestPrice": null,
+      "lowestStore": null,
+
+      "trend": null,
+
+      "lastUpdated": null
+    }
+  ]
+}
