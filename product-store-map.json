@@ -1,74 +1,78 @@
 {
-  "products": [
-    {
-      "name": "Optic Football Hobby",
-      "sport": "Football",
-      "stores": []
-    },
-    {
-      "name": "Optic Football Mega",
-      "sport": "Football",
-      "stores": []
-    },
-    {
-      "name": "Optic Football Blaster",
-      "sport": "Football",
-      "stores": []
-    },
-    {
-      "name": "Topps Chrome Football Hobby",
-      "sport": "Football",
-      "stores": []
-    },
-    {
-      "name": "Topps Chrome Football Mega",
-      "sport": "Football",
-      "stores": []
-    },
-    {
-      "name": "Topps Chrome Football Value Box",
-      "sport": "Football",
-      "stores": []
-    },
-    {
-      "name": "Topps Signature Football",
-      "sport": "Football",
-      "stores": []
-    },
-    {
-      "name": "Phoenix Football Mega",
-      "sport": "Football",
-      "stores": []
-    },
-    {
-      "name": "Phoenix Football Blaster",
-      "sport": "Football",
-      "stores": []
-    },
-    {
-      "name": "Prizm Black Football Hobby",
-      "sport": "Football",
-      "stores": []
-    },
-    {
-      "name": "Bowman Chrome Baseball Hobby",
-      "sport": "Baseball",
-      "stores": []
-    },
-    {
-      "name": "Topps Chrome Baseball Mega",
-      "sport": "Baseball",
-      "stores": []
-    },
-    {
-      "name": "Topps Chrome Baseball Blaster",
-      "sport": "Baseball",
-      "stores": []
-    },
-    {
-      "name": "Bowman Chrome Basketball",
-      "sport": "Basketball",
-      "stores": []
-    }
+  "Optic Football Hobby": [
+    "Dave & Adam's",
+    "Steel City Collectibles",
+    "Blowout Cards"
+  ],
+
+  "Optic Football Mega": [
+    "Walmart",
+    "Target",
+    "Fanatics"
+  ],
+
+  "Optic Football Blaster": [
+    "Walmart",
+    "Target",
+    "Fanatics"
+  ],
+
+  "Topps Chrome Football Hobby": [
+    "Dave & Adam's",
+    "Steel City Collectibles",
+    "Blowout Cards"
+  ],
+
+  "Topps Chrome Football Mega": [
+    "Walmart",
+    "Target",
+    "Fanatics"
+  ],
+
+  "Topps Chrome Football Value Box": [
+    "Walmart",
+    "Target"
+  ],
+
+  "Phoenix Football Mega": [
+    "Walmart",
+    "Target",
+    "Fanatics"
+  ],
+
+  "Phoenix Football Blaster": [
+    "Walmart",
+    "Target",
+    "Fanatics"
+  ],
+
+  "Prizm Black Football Hobby": [
+    "Dave & Adam's",
+    "Steel City Collectibles",
+    "Blowout Cards"
+  ],
+
+  "Bowman Chrome Baseball Hobby": [
+    "Dave & Adam's",
+    "Steel City Collectibles",
+    "Blowout Cards"
+  ],
+
+  "Topps Chrome Baseball Mega": [
+    "Walmart",
+    "Target",
+    "Fanatics"
+  ],
+
+  "Topps Chrome Baseball Blaster": [
+    "Walmart",
+    "Target",
+    "Fanatics"
+  ],
+
+  "Bowman Chrome Basketball": [
+    "Dave & Adam's",
+    "Steel City Collectibles",
+    "Blowout Cards"
   ]
 }
